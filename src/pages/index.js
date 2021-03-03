@@ -1,21 +1,12 @@
 import * as React from "react";
-import { Link } from 'gatsby';
-
+import { Layout } from '../components';
 
 const IndexPage = () => {
+	let pageTitle = 'Home';
 	return (
-		<main>
-			<title>Home Page</title>
-			<h1>
-				Congratulations
-				<br />
-				<span>— you just made a Gatsby site! </span>
-				<span role="img" aria-label="Party popper emojis">
-					🎉🎉🎉
-				</span>
-			</h1>
-			<Link to='/about'>Go to the About page</Link>
-		</main>
+		<Layout pageTitle={pageTitle}>
+			<p>This is the {pageTitle} page.</p>
+		</Layout>
 	)
 }
 

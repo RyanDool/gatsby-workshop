@@ -1,7 +1,13 @@
 import React from 'react';
+import { Layout } from '../components';
 
-const MyComponent = () => (
-	<h1>Hi, welcome to my site!</h1>
-)
+const AboutPage = () => {
+	let pageTitle = 'About';
+	return (
+		<Layout pageTitle={pageTitle}>
+			<p>This is the {pageTitle} page.</p>
+		</Layout>
+	)
+}
 
-export default MyComponent;
+export default AboutPage;

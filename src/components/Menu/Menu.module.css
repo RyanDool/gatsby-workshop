@@ -1,0 +1,10 @@
+.nav-bar{
+	display: block;
+	position: relative;
+}
+.nav-bar ul li{
+	display:block;
+	color: green;
+	font-weight: bold;
+	font-size: 1.125rem;
+}
